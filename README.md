@@ -20,7 +20,7 @@
 - [ ] hero section with gif
 - [ ] custom mouse pointer
 - [ ] YT-like top loading bar
-- [ ] interactive buttons₩
+- [ ] interactive buttons
 - [ ] basic carousel
 - [ ] basic transition
 - [ ] hamburger menu
