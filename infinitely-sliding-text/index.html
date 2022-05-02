@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+    <head>
+        <title>sliding text</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
+    </head>
+    <body>
+       <div class="marquee-w">
+            <div class="marquee">
+                <span>this is an infinitely sliding text example&nbsp;&nbsp;&nbsp;</span>
+            </div>
+            <div class="marquee marquee2">
+                <span>this is an infinitely sliding text example&nbsp;&nbsp;&nbsp;</span>
+            </div>
+        </div>
+         <!-- <div class="marquee-horizontal">
+            <div class="horizontal">
+                <span>this is an infinitely sliding text example&nbsp;&nbsp;&nbsp;</span>
+            </div>
+            <div class="horizontal horizontal2">
+                <span>this is an infinitely sliding text example&nbsp;&nbsp;&nbsp;</span>
+            </div>
+        </div> -->
+        <div class="circle">
+            <div class="logo"></div>
+            <div class="text"><p>Lorem ipsum dolor sit amet</p></div>
+        </div>
+        <script>
+            const text = document.querySelector('.text p');
+            text.innerHTML = text.innerText.split("").map(
+                (char, i) =>
+                `<span style="transform:rotate(${i * 8.5}deg)">${char}</span>`
+            ).join("")
+        </script>
+    </body>
+
+</html>
