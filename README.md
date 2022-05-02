@@ -15,8 +15,8 @@
 
 ### 순서
 
-- [ ] auto scolling effect
-- [ ] typewriter effect
+- [x] auto scolling effect
+- [x] typewriter effect
 - [ ] hero section with gif
 - [ ] custom mouse pointer
 - [ ] YT-like top loading bar
