@@ -15,10 +15,10 @@
 
 ### 순서
 
-- [ ] auto scolling effect
-- [ ] typewriter effect
-- [ ] hero section with gif
-- [ ] custom mouse pointer
+- [x] auto scolling effect
+- [x] typewriter effect
+- [x] hero section with gif
+- [x] custom mouse pointer
 - [ ] YT-like top loading bar
 - [ ] interactive buttons
 - [ ] basic carousel
