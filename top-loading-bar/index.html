@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>yt like top loading bar</title>
+  </head>
+  <body>
+    <div class="progress-bar"></div>
+    <div class="very-long-content">this is a content</div>
+    <div class="end">you've reached the end</div>
+    <div class="footer">this is a footer</div>
+    <script>
+      function updateProgressBar() {
+        const progressBar = document.querySelector(".progress-bar");
+        const content = document.querySelector(".very-long-content");
+        const scroll = window.pageYOffset; // it returns the number of pixels the document is currently scrolled along the vertical axis
+
+        const endPosition =
+          content.offsetTop + content.offsetHeight - window.innerHeight;
+
+        const progress = Math.min(Math.ceil((scroll / endPosition) * 100), 100);
+
+        progressBar.style.width = `${progress}%`;
+      }
+
+      window.onload = function () {
+        updateProgressBar();
+        document.addEventListener("scroll", updateProgressBar);
+      };
+    </script>
+  </body>
+</html>
