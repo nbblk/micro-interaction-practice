@@ -19,8 +19,8 @@
 - [x] typewriter effect
 - [x] hero section with gif
 - [x] custom mouse pointer
-- [ ] YT-like top loading bar
-- [ ] interactive buttons
+- [x] YT-like top loading bar
+- [x] interactive buttons
 - [ ] basic carousel
 - [ ] basic transition
 - [ ] hamburger menu
