@@ -21,7 +21,7 @@
 - [x] custom mouse pointer
 - [x] YT-like top loading bar
 - [x] interactive buttons
-- [ ] basic carousel
-- [ ] basic transition
-- [ ] hamburger menu
+- [x] basic carousel
+- [x] basic transition
+- [x] hamburger menu
       ...
