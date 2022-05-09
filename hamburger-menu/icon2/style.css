@@ -1,0 +1,53 @@
+body {
+  background-color: rgb(75, 75, 75);
+}
+
+.hamburger-btn {
+  width: 36px;
+  height: 30px;
+  background-color: #f6f6f6;
+  box-shadow: 0 0 9px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 4px;
+  margin: auto;
+  transform: translateY(calc(50vh - 30px));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.hamburger-btn > span {
+  width: 100%;
+  height: 6px;
+  background-color: rgb(75, 75, 75);
+  border-radius: 1px;
+  transform-origin: center;
+  transition: ease all 200ms;
+}
+
+span:first-child {
+  width: 60%;
+  transform-origin: left;
+}
+
+span:last-child {
+  width: 80%;
+  transform-origin: right;
+}
+
+.hamburger-btn.active span {
+  transform: rotate(-43deg);
+}
+
+.hamburger-btn.active span:first-child {
+  width: 35%;
+  transform: rotate(42.5deg);
+  margin-left: 15%;
+}
+
+.hamburger-btn.active span:last-child {
+  width: 75%;
+  transform: rotate(42.5deg);
+  margin-left: 13%;
+}
